@@ -18,7 +18,8 @@
   box-sizing: border-box; }
 
 body {
-  font-size: 18px; }
+  font-size: 18px;
+  color: #2D2E36; }
 
 .navbar {
   max-height: 118px;
@@ -48,7 +49,8 @@ body {
 footer i {
   font-size: 40px; }
 
-#about-section_0 {
+#about-section_0,
+#contact-section_0 {
   background-image: url("../images/about-section_0-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,3 +60,9 @@ footer i {
 #about-section_2 .card {
   background-color: #fff;
   min-height: 300px; }
+
+#contact-section_2 {
+  background-color: #2D2E36; }
+
+.font-color-primary {
+  color: #37BEBF; }
