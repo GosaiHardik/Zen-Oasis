@@ -66,3 +66,57 @@ footer i {
 
 .font-color-primary {
   color: #37BEBF; }
+
+.nav-pills {
+  position: relative; }
+  .nav-pills .nav-link {
+    background-color: #2D2E36;
+    color: #fff !important;
+    width: 75% !important;
+    margin: 0 auto; }
+    .nav-pills .nav-link.active {
+      background-color: #37BEBF !important;
+      color: #2D2E36 !important; }
+
+.tab-content {
+  background: linear-gradient(0deg, rgba(254, 254, 253, 0.8) 0%, rgba(254, 254, 253, 0.8) 100%), #37BEBF;
+  margin-top: -36px; }
+
+.modal-content {
+  background-image: url(../images/breathing-section_1-popup_1-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 500px; }
+
+.triangle-container {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 173.21px solid #37BEBF;
+  margin: 100px auto;
+  opacity: 0.4; }
+
+.dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+  animation: moveDot 10s linear infinite; }
+
+@keyframes moveDot {
+  0% {
+    top: 0;
+    left: -4px; }
+  33% {
+    top: 165px;
+    left: 96px; }
+  66% {
+    top: 165px;
+    left: -108px; }
+  100% {
+    top: 0;
+    left: -19px; } }

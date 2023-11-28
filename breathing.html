@@ -33,11 +33,19 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Mindfulness</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Mindfulness
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="meditation.html">Meditation</a>
+                                <a class="dropdown-item" href="breathing.html">Breathing</a>
+                            </div>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="#">Virtual Garden</a>
                         </li>
@@ -45,10 +53,10 @@
                             <a class="nav-link" href="#">Resources</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                     <span class="navbar-text">
@@ -60,27 +68,117 @@
     </header>
 
     <main>
-        <section id="contact-section_0" class="p-4">
-            <h1 class="mb-0 text-center fw-bold">Contact Us</h1>
-        </section>
-        <section class="container pt-5 pb-5" id="about-section_1">
+        <section id="breathing-section_0" class="container pt-5 pb-5">
             <div class="row">
-                <div class="col-lg-4 text-center">
-                    <img class="mb-5" width="60" src="./assets/images/contact-section_0-icon_1.png" />
-                    <p class="mb-0">5899 Decker Drive<br />Suite 7015(Las Colinas) <br />Irving, TX 79969</p>
+                <div class="col-lg-6 my-auto">
+                    <h1 class="mb-5 fw-bold">Breathing</h1>
+                    <p class="mb-0">Breathing exercises are a key to achieving tranquility and balance, providing a
+                        moment to centre oneself amidst life's chaos. These simple yet profound practices help regulate
+                        stress, enhance mental clarity, and improve physiological well-being. By focusing on mindful,
+                        controlled breathing, we invite a sense of calm and presence into our daily life. Incorporate
+                        breathing exercises regularly to nurture a state of relaxation, focus, and harmony in both mind
+                        and body.</p>
                 </div>
-                <div class="col-lg-4 text-center">
-                    <img class="mb-5" width="60" src="./assets/images/contact-section_0-icon_2.png" />
-                    <p class="mb-0"><a href="tell:+14371111111">+1-437-xxx-xxxx</a></p>
+                <div class="col-lg-6 my-auto">
+                    <img class="" width="100%" src="./assets/images/breathing-section_0-img_1.png" />
                 </div>
-                <div class="col-lg-4 text-center">
-                    <img class="mb-5" width="60" src="./assets/images/contact-section_0-icon_3.png" />
-                    <p class="mb-0"><a href="mailto:zen.oasis@mindfulzen.com">zen.oasis@mindfulzen.com</a></p>
+            </div>
+        </section>
+        <section class="container-fluid g-0 pt-5 pb-5" id="breathing-section_1">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="fw-bold text-center p-5">Calm Yourself</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <ul class="nav nav-pills mb-3 nav-fill" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Deep Breathing</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Box Breathing</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">Awake Breathing</button>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-12">
+                    <div class="tab-content pb-5 pt-5" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab">
+                            <div class="row">
+                                <div class="col-lg-6 offset-lg-3 text-center">
+                                    <img class="mb-5 mt-5" src="./assets/images/breathing-section_1-icon_1.png" />
+                                    <p class="mb-5">Deep Breathing is a practice of slow, deliberate inhalations and
+                                        exhalations that
+                                        engage the diaphragm, fostering relaxation and stress relief. It helps in
+                                        calming the nervous system and improving focus.</p>
+                                    <button class="btn btn-dark m-auto" data-bs-toggle="modal"
+                                        data-bs-target="#deepBreathing">Start Session</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">
+                            <div class="row">
+                                <div class="col-lg-6 offset-lg-3 text-center">
+                                    <img class="mb-5 mt-5" src="./assets/images/breathing-section_1-icon_2.png" />
+                                    <p class="mb-5">Box Breathing, or square breathing, involves breathing in equal
+                                        parts – inhaling, holding, exhaling, and holding again, each for the same count.
+                                        This technique is effective in managing stress, increasing concentration, and
+                                        restoring mental clarity.</p>
+                                    <button class="btn btn-dark m-auto">Start Session</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab">
+                            <div class="row">
+                                <div class="col-lg-6 offset-lg-3 text-center">
+                                    <img class="mb-5 mt-5" src="./assets/images/breathing-section_1-icon_3.png" />
+                                    <p class="mb-5">Awake Breathing emphasizes maintaining a conscious awareness of your
+                                        breath during daily activities. This practice aids in anchoring the mind in the
+                                        present moment, reducing anxiety, and enhancing overall mindfulness, thereby
+                                        improving emotional and mental well-being.</p>
+                                    <button class="btn btn-dark m-auto">Start Session</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </section>
-      
+
+        <div class="modal fade" id="deepBreathing" tabindex="-1" role="dialog" aria-labelledby="deepBreathingLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-end">
+                            <a type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </a>
+                        </div>
+                        <h3 class="mb-5 text-center">Deep Calm</h3>
+                        <div class="triangle-container">
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
     <footer class="border-top pt-5 pb-5">
         <div class="container">
