@@ -83,11 +83,19 @@ footer i {
   margin-top: -36px; }
 
 .modal-content {
-  background-image: url(../images/breathing-section_1-popup_1-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 500px;
   height: 500px; }
+
+#deepBreathing .modal-content {
+  background-image: url(../images/breathing-section_1-popup_1-bg.png); }
+
+#box .modal-content {
+  background-image: url(../images/breathing-section_1-popup_2-bg.png); }
+
+#round .modal-content {
+  background-image: url(../images/breathing-section_1-popup_3-bg.png); }
 
 .triangle-container {
   position: relative;
@@ -98,14 +106,70 @@ footer i {
   border-bottom: 173.21px solid #37BEBF;
   margin: 100px auto;
   opacity: 0.4; }
+  .triangle-container .dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    animation: moveDot 10s linear infinite; }
 
-.dot {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: #e74c3c;
+.square-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  background-color: #37BEBF;
+  border: 2px solid #37BEBF;
+  opacity: 0.4; }
+  .square-container .dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    animation: moveDotSquare 10s linear infinite; }
+
+.circle-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  background-color: #37BEBF;
   border-radius: 50%;
-  animation: moveDot 10s linear infinite; }
+  opacity: 0.4; }
+  .circle-container .dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    animation: moveDotRound 8s linear infinite;
+    top: 45%;
+    left: 45%; }
+
+@keyframes moveDotRound {
+  0% {
+    transform: translate(0, 0) rotate(0deg) translateX(100px) rotate(0deg); }
+  100% {
+    transform: translate(0, 0) rotate(360deg) translateX(100px) rotate(-360deg); } }
+
+@keyframes moveDotSquare {
+  0% {
+    top: -12px;
+    left: -12px; }
+  25% {
+    top: -12px;
+    left: 188px; }
+  50% {
+    top: 188px;
+    left: 188px; }
+  75% {
+    top: 188px;
+    left: -12px; }
+  100% {
+    top: -12px;
+    left: -12px; } }
 
 @keyframes moveDot {
   0% {
