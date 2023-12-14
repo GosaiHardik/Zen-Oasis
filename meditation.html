@@ -47,7 +47,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Virtual Garden</a>
+                            <a class="nav-link" href="virtual.html">Virtual Garden</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Resources</a>
@@ -121,7 +121,8 @@
                                         often through audio recordings, leading you through a series of relaxation and
                                         mindfulness exercises. It's ideal for beginners or those seeking structured
                                         mindfulness practices.</p>
-                                    <button class="btn btn-dark m-auto">Start Session</button>
+                                    <button class="btn btn-dark m-auto" data-bs-toggle="modal"
+                                        data-bs-target="#guided">Start Session</button>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +135,8 @@
                                         personal experience where individuals meditate without guidance, relying on
                                         their own techniques and rhythms. This form suits those who prefer a
                                         self-directed approach to mindfulness.</p>
-                                    <button class="btn btn-dark m-auto">Start Session</button>
+                                    <button class="btn btn-dark m-auto" data-bs-toggle="modal"
+                                        data-bs-target="#unguided">Start Session</button>
                                 </div>
                             </div>
                         </div>
@@ -147,7 +149,8 @@
                                         phrase, or sound, such as the classic "Om." This repetition helps clear the mind
                                         and deepen concentration, making it a powerful tool for achieving mental clarity
                                         and tranquility.</p>
-                                    <button class="btn btn-dark m-auto">Start Session</button>
+                                    <button class="btn btn-dark m-auto" data-bs-toggle="modal"
+                                        data-bs-target="#mantra">Start Session</button>
                                 </div>
                             </div>
                         </div>
@@ -156,6 +159,123 @@
             </div>
 
         </section>
+
+        <div class="modal fade" id="guided" tabindex="-1" role="dialog" aria-labelledby="guidedLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-end">
+                            <a type="button" class="close" data-bs-dismiss="modal" aria-label="Close"
+                                >
+                                <img src="./assets/images/close.png" width="30"/>
+                            </a>
+                        </div>
+                        <h3 class="mb-5 text-center">Guided</h3>
+                        <div class="slide__audio js-audio">
+                            <audio class="slide__audio-player" controls="">
+                                <source src="./assets/audios/guided.mp3" type="audio/mpeg" />
+                            </audio>
+                            <div class="audio__controls">
+                                <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+                                    <path id="seekbar" fill="none" stroke-meterlimit="10"
+                                        d="M50,2.9L50,2.9C76,2.9,97.1,24,97.1,50v0C97.1,76,76,97.1,50,97.1h0C24,97.1,2.9,76,2.9,50v0C2.9,24,24,2.9,50,2.9z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="equalizer" viewBox="0 0 100 100">
+                                    <g class="equalizer-group">
+                                        <rect class="bar"></rect>
+                                        <rect class="bar"></rect>
+                                        <rect class="bar"></rect>
+                                        <rect class="bar"></rect>
+                                        <rect class="bar"></rect>
+                                    </g>
+                                </svg>
+                                <div class="audio__slider"></div>
+                                <button class="play-pause"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="unguided" tabindex="-1" role="dialog" aria-labelledby="unguidedLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-end">
+                            <a type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <img src="./assets/images/close.png" width="30"/>
+                            </a>
+                        </div>
+                        <h3 class="mb-5 text-center">Unguided</h3>
+                        <div class="slide__audio js-audio">
+                            <audio class="slide__audio-player" controls="">
+                                <source src="./assets/audios/unguided.mp3" type="audio/mpeg" />
+                            </audio>
+                            <div class="audio__controls">
+                                <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+                                    <path id="seekbar" fill="none" stroke-meterlimit="10"
+                                        d="M50,2.9L50,2.9C76,2.9,97.1,24,97.1,50v0C97.1,76,76,97.1,50,97.1h0C24,97.1,2.9,76,2.9,50v0C2.9,24,24,2.9,50,2.9z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="equalizer" viewBox="0 0 100 100">
+                                    <g class="equalizer-group">
+                                        <rect class="bar"></rect>
+                                        <rect class="bar"></rect>
+                                        <rect class="bar"></rect>
+                                        <rect class="bar"></rect>
+                                        <rect class="bar"></rect>
+                                    </g>
+                                </svg>
+                                <div class="audio__slider"></div>
+                                <button class="play-pause"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="mantra" tabindex="-1" role="dialog" aria-labelledby="mantraLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-end">
+                            <a type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <img src="./assets/images/close.png" width="30"/>
+                            </a>
+                        </div>
+                        <h3 class="mb-5 text-center">Mantra</h3>
+                        <div class="slide__audio js-audio">
+                            <audio class="slide__audio-player" controls="">
+                                <source src="./assets/audios/mantra.mp3" type="audio/mpeg" />
+                            </audio>
+                            <div class="audio__controls">
+                                <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+                                    <path id="seekbar" fill="none" stroke-meterlimit="10"
+                                        d="M50,2.9L50,2.9C76,2.9,97.1,24,97.1,50v0C97.1,76,76,97.1,50,97.1h0C24,97.1,2.9,76,2.9,50v0C2.9,24,24,2.9,50,2.9z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="equalizer" viewBox="0 0 100 100">
+                                    <g class="equalizer-group">
+                                        <rect class="bar"></rect>
+                                        <rect class="bar"></rect>
+                                        <rect class="bar"></rect>
+                                        <rect class="bar"></rect>
+                                        <rect class="bar"></rect>
+                                    </g>
+                                </svg>
+                                <div class="audio__slider"></div>
+                                <button class="play-pause"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
     <footer class="border-top pt-5 pb-5">
@@ -171,16 +291,17 @@
                 <div class="col-lg-3 mt-5">
                     <h4 class="fw-bold">Information</h4>
                     <ul class="list-unstyled">
-                        <li>About</li>
-                        <li>Contact</li>
+                        <li> <a class="" href="about.html">About</a></li>
+                        <li><a class="" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 mt-5">
                     <h4 class="fw-bold">Explore</h4>
                     <ul class="list-unstyled">
-                        <li>Mindfulness</li>
-                        <li>Virtual Garden</li>
-                        <li>Resources</li>
+                        <li><a class="" href="breathing.html">Breathing</a></li>
+                        <li><a class="" href="meditation.html">Meditation</a></li>
+                        <li><a class="" href="virtual.html">Virtual Garden</a></li>
+                        <li><a class="" href="#">Resources</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 mt-5">
